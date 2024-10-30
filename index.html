@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchit's Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sanchit's Translator</h2>
+        
+        <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+        
+        <div class="dropdown-container">
+            <label for="inputLanguage">From:</label>
+            <select id="inputLanguage">
+                <!-- Input language options go here -->
+            </select>
+            
+            <label for="languageDropdown">To:</label>
+            <select id="languageDropdown">
+                <!-- Output language options go here -->
+            </select>
+        </div>
+        <p class="warning"></p>
+        <button id="translateButton">Translate</button>
+        <hr>
+        <textarea id="outputText" placeholder="Translation will appear here..." readonly></textarea>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
